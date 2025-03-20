@@ -19,6 +19,9 @@ export default function Home() {
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
         <Counter count={count} />
+        <div>
+          {Deno.env.get("env-test")}
+        </div>
       </div>
     </div>
   );
